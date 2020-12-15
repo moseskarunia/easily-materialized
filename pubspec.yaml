@@ -1,0 +1,19 @@
+name: easily_materialized
+description: A flutter library to help lift up some tedious tasks in setting up material theme properly.
+version: 0.0.1
+repository: https://github.com/moseskarunia/easily-materialized
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^4.1.3
+
+flutter:
