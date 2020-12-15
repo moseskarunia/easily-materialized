@@ -1,6 +1,6 @@
 # easily_materialized
 
-![easily_materialized](https://github.com/moseskarunia/easily-materialized/workflows/easily_materialized/badge.svg) [![codecov](https://codecov.io/gh/moseskarunia/easily-materialized/branch/master/graph/badge.svg?token=9WT1SZPDB4)](https://codecov.io/gh/moseskarunia/easily-materialized)
+![easily_materialized](https://github.com/moseskarunia/easily-materialized/workflows/easily_materialized/badge.svg) [![codecov](https://codecov.io/gh/moseskarunia/easily-materialized/branch/master/graph/badge.svg?token=9WT1SZPDB4)](https://codecov.io/gh/moseskarunia/easily-materialized) [![pub package](https://img.shields.io/pub/v/easily_materialized.svg)](https://pub.dev/packages/easily_materialized)
 
 <a href="https://www.buymeacoffee.com/moseskarunia" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" style="height: 6px !important;width: 22px !important;" ></a>
 
