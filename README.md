@@ -7,4 +7,28 @@
 A flutter library to help lift up some tedious tasks in setting up material theme properly.
 
 ## Features
+
+### ModifyTextTheme (TextTheme extension)
 `ModifyTextTheme` an extension of `TextTheme` to easily bulk update either or both display and body text styles. For more material type system, [read here](https://material.io/design/typography/the-type-system.html)
+
+#### Update your display styles (all headlines and subtitles):
+
+```dart
+final TextTheme result = Typography.englishLike2018
+  .modifyDisplayStyles(fontFamily: 'Montserrat', color: Colors.green);
+```
+
+#### Update your body styles (bodyText (1-2), caption, button and overline)
+
+```dart
+final TextTheme result = Typography.englishLike2018
+  .modifyBodyStyles(fontFamily: 'Lato', color: Colors.red);
+```
+
+#### Or even chain both of them to update all styles in a theme
+
+```dart
+final TextTheme result = Typography.englishLike2018
+  .modifyDisplayStyles(fontFamily: 'Montserrat', color: Colors.green)
+  .modifyBodyStyles(fontFamily: 'Lato', color: Colors.red);
+```
