@@ -1,3 +1,3 @@
 library easily_materialized;
 
-export 'src/generate_styled_material_theme.dart';
+export 'src/modify_text_theme_extension.dart';
