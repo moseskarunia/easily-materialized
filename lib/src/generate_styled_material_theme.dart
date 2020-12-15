@@ -130,30 +130,30 @@ class GenerateStyledMaterialTheme {
     }
 
     if (displayFontFamily != null && displayFontFamily.isNotEmpty) {
-      textTheme = modifyDisplayFontFamily(
+      textTheme = modifyDisplayFont(
         textTheme: textTheme,
         fontFamily: displayFontFamily,
       );
-      primaryTextTheme = modifyDisplayFontFamily(
+      primaryTextTheme = modifyDisplayFont(
         textTheme: primaryTextTheme,
         fontFamily: displayFontFamily,
       );
-      accentTextTheme = modifyDisplayFontFamily(
+      accentTextTheme = modifyDisplayFont(
         textTheme: accentTextTheme,
         fontFamily: displayFontFamily,
       );
     }
 
     if (bodyFontFamily != null && bodyFontFamily.isNotEmpty) {
-      textTheme = modifyBodyFontFamily(
+      textTheme = modifyBodyFont(
         textTheme: textTheme,
         fontFamily: displayFontFamily,
       );
-      primaryTextTheme = modifyBodyFontFamily(
+      primaryTextTheme = modifyBodyFont(
         textTheme: primaryTextTheme,
         fontFamily: displayFontFamily,
       );
-      accentTextTheme = modifyBodyFontFamily(
+      accentTextTheme = modifyBodyFont(
         textTheme: accentTextTheme,
         fontFamily: displayFontFamily,
       );
@@ -175,33 +175,74 @@ class GenerateStyledMaterialTheme {
   }
 
   @visibleForTesting
-  TextTheme modifyDisplayFontFamily({
+  TextTheme modifyDisplayFont({
     @required TextTheme textTheme,
     @required String fontFamily,
+    Color color,
   }) {
     return textTheme.copyWith(
-      headline1: textTheme.headline1.copyWith(fontFamily: fontFamily),
-      headline2: textTheme.headline2.copyWith(fontFamily: fontFamily),
-      headline3: textTheme.headline3.copyWith(fontFamily: fontFamily),
-      headline4: textTheme.headline4.copyWith(fontFamily: fontFamily),
-      headline5: textTheme.headline5.copyWith(fontFamily: fontFamily),
-      headline6: textTheme.headline6.copyWith(fontFamily: fontFamily),
-      subtitle1: textTheme.subtitle1.copyWith(fontFamily: fontFamily),
-      subtitle2: textTheme.subtitle2.copyWith(fontFamily: fontFamily),
+      headline1: textTheme.headline1.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.headline1.color,
+      ),
+      headline2: textTheme.headline2.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.headline2.color,
+      ),
+      headline3: textTheme.headline3.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.headline3.color,
+      ),
+      headline4: textTheme.headline4.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.headline4.color,
+      ),
+      headline5: textTheme.headline5.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.headline5.color,
+      ),
+      headline6: textTheme.headline6.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.headline6.color,
+      ),
+      subtitle1: textTheme.subtitle1.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.subtitle1.color,
+      ),
+      subtitle2: textTheme.subtitle2.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.subtitle2.color,
+      ),
     );
   }
 
   @visibleForTesting
-  TextTheme modifyBodyFontFamily({
+  TextTheme modifyBodyFont({
     @required TextTheme textTheme,
     @required String fontFamily,
+    Color color,
   }) {
     return textTheme.copyWith(
-      bodyText1: textTheme.bodyText1.copyWith(fontFamily: fontFamily),
-      bodyText2: textTheme.bodyText2.copyWith(fontFamily: fontFamily),
-      caption: textTheme.caption.copyWith(fontFamily: fontFamily),
-      button: textTheme.button.copyWith(fontFamily: fontFamily),
-      overline: textTheme.overline.copyWith(fontFamily: fontFamily),
+      bodyText1: textTheme.bodyText1.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.bodyText1.color,
+      ),
+      bodyText2: textTheme.bodyText2.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.bodyText2.color,
+      ),
+      caption: textTheme.caption.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.caption.color,
+      ),
+      button: textTheme.button.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.button.color,
+      ),
+      overline: textTheme.overline.copyWith(
+        fontFamily: fontFamily,
+        color: color ?? textTheme.overline.color,
+      ),
     );
   }
 }
